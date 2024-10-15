@@ -7,7 +7,8 @@ export class PropertyController {
         return "This is all properties"
     }
 
-    @Get(":id")
+    @Get(":id/:slug")
+        // getByID(@Param('id') id : string){
     getByID(@Param() id){
         return id;
     }
