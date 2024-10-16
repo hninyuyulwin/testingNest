@@ -13,6 +13,9 @@ export class CreatePropertyDto {
 
     // @IsInt({always:true})
     @IsInt()
+    @IsInt()
+    @IsInt()
+    @IsInt()
     @IsPositive({message: "Not allow negative"})
     area : number;
 }
